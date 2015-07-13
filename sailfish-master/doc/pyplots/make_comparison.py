@@ -1,1 +1,0 @@
-../../perftest/make_comparison.py
