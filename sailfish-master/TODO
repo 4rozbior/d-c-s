@@ -1,0 +1,28 @@
+This list might be out of date.  For up-to-date list of future Sailfish enhancements,
+please check:
+
+http://code.google.com/p/sailfish-cfd/issues/list?can=2&q=label%3Aenhancement
+
+* TASKS
+
+- Automated LDC regtest.
+  Add a new regtest to automatically run the Lid-Driven Cavity example,
+  and generate plots comparing the results to data from the literature
+  (see also regtest/ldc_golden).
+
+- Use the Poiseuille geometry to test velocity BCs.
+  By transforming the standard force-driven test case into a moving
+  frame of reference, the test case can be redefined so that wall
+  nodes are replaced by velocity boundary conditions.  Implement this
+  for the 2D and 3D test cases and add this to the Poiseuille regtest.
+
+- Add a Taylor-Green testcase.
+  See e.g. the D3Q13 PRE paper for more info about this test case.
+
+- Implement grid refinement.
+  Make it possible to define regions of the simulation domain which are
+  to be simulated at a higher spatial and temporal resolution.
+
+- Add support for heat transfer calculation.
+
+- Add support for the free energy binary liquid model with D3Q15.
